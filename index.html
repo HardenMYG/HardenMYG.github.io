@@ -5,201 +5,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="HardenMYG 的个人学术主页，介绍研究生阶段论文、研究方向、教育经历与基本情况。"
+      content="HardenMYG 的个人学术主页，介绍教育经历、研究兴趣、论文与项目。"
     />
-    <title>HardenMYG | Academic Homepage</title>
+    <title>HardenMYG</title>
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <header class="topbar">
-      <a class="brand" href="#home" aria-label="HardenMYG home">
-        <span class="brand-mark">H</span>
-        <span>HardenMYG</span>
-      </a>
-      <nav class="nav" aria-label="Primary navigation">
-        <a href="#about">简介</a>
-        <a href="#research">研究</a>
-        <a href="#publications">论文</a>
-        <a href="#contact">联系</a>
-      </nav>
-    </header>
-
-    <main id="home">
-      <section class="hero">
-        <div class="hero-copy">
-          <p class="eyebrow">Academic Homepage</p>
-          <h1>HardenMYG</h1>
-          <p class="lead">
-            这里是我的个人学术主页，用于介绍研究生阶段的研究方向、论文成果、项目经历与个人基本情况。
-            页面内容目前使用占位文本，后续可以按真实信息逐项替换。
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#publications">
-              <span aria-hidden="true">P</span>
-              查看论文
-            </a>
-            <a class="button secondary" href="#contact">
-              <span aria-hidden="true">@</span>
-              联系方式
-            </a>
-          </div>
-        </div>
-
-        <aside class="profile-panel" aria-label="Personal profile card">
-          <div class="portrait-placeholder" aria-hidden="true">
-            <span>H</span>
-          </div>
+    <main class="page">
+      <header class="site-header" id="top">
+        <div class="profile">
+          <div class="portrait" aria-hidden="true">H</div>
           <div>
-            <p class="profile-name">HardenMYG</p>
-            <p class="profile-bio">
-              研究生 / 研究方向待补充。关注可复现研究、扎实实验与面向真实问题的技术方法。
+            <h1>HardenMYG</h1>
+            <p class="subtitle">
+              Undergraduate Student, College of Computer Science, Nankai University
+            </p>
+            <p>
+              我目前是南开大学计算机学院计算机科学与技术专业的大三本科生。这个主页用于记录我的教育经历、
+              研究兴趣、阶段性论文与项目成果。
+            </p>
+            <p class="links">
+              <a href="https://github.com/HardenMYG" target="_blank" rel="noreferrer">GitHub</a>
+              <span>/</span>
+              <a href="mailto:hello@example.com">Email</a>
             </p>
           </div>
-          <dl class="stats">
-            <div>
-              <dt>Degree</dt>
-              <dd>Master</dd>
-            </div>
-            <div>
-              <dt>Focus</dt>
-              <dd>Research</dd>
-            </div>
-            <div>
-              <dt>Status</dt>
-              <dd>Open</dd>
-            </div>
-          </dl>
-        </aside>
-      </section>
+        </div>
+      </header>
 
-      <section class="section intro-band" id="about" aria-labelledby="about-title">
-        <div>
-          <p class="eyebrow">About</p>
-          <h2 id="about-title">个人简介</h2>
-        </div>
-        <div class="prose">
-          <p>
-            我目前处于研究生阶段，主要进行论文阅读、模型实验、方法改进与研究写作。这个页面会作为长期更新的个人主页，
-            用来展示我的学术背景、研究兴趣、阶段性成果和可公开的项目材料。
-          </p>
-          <p>
-            你可以在这里补充学校、学院、导师、课题组、研究领域、个人经历、获奖情况等信息。
-          </p>
-        </div>
-      </section>
+      <nav class="nav" aria-label="Page navigation">
+        <a href="#education">Education</a>
+        <a href="#research-interest">Research Interest</a>
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+      </nav>
 
-      <section class="section research-section" id="research" aria-labelledby="research-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Research</p>
-            <h2 id="research-title">研究方向</h2>
-          </div>
-        </div>
-        <div class="research-grid">
-          <article class="info-card">
-            <span class="card-index">01</span>
-            <h3>研究方向一</h3>
-            <p>在这里写你的主要研究方向，例如机器学习、计算机视觉、自然语言处理、数据挖掘或相关交叉领域。</p>
-          </article>
-          <article class="info-card">
-            <span class="card-index">02</span>
-            <h3>研究方向二</h3>
-            <p>在这里补充具体问题、方法路线、应用场景，或者你正在持续跟进的研究主题。</p>
-          </article>
-          <article class="info-card">
-            <span class="card-index">03</span>
-            <h3>研究方向三</h3>
-            <p>可以放置实验平台、数据集、系统实现、工程工具，或与论文工作相关的长期积累。</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section" id="publications" aria-labelledby="publications-title">
-        <div class="section-heading">
-          <div>
-            <p class="eyebrow">Publications</p>
-            <h2 id="publications-title">研究生阶段论文</h2>
-          </div>
-        </div>
-        <div class="publication-list">
-          <article class="publication-card">
-            <p class="pub-year">2026</p>
+      <section class="section" id="education">
+        <h2>Education</h2>
+        <div class="education-list">
+          <article class="education-item">
+            <div class="education-stage">Undergraduate</div>
             <div>
-              <h3>论文题目待补充</h3>
-              <p class="authors">HardenMYG, Co-author Name, Advisor Name</p>
-              <p class="venue">Conference / Journal / Preprint</p>
-              <p>
-                在这里写 1-2 句话介绍论文贡献、研究问题、核心方法或实验结果。也可以添加 PDF、代码和数据链接。
-              </p>
-              <div class="pub-links">
-                <a href="#" aria-label="Paper link placeholder">Paper</a>
-                <a href="#" aria-label="Code link placeholder">Code</a>
-              </div>
+              <h3>Nankai University</h3>
+              <p>College of Computer Science, Computer Science and Technology</p>
+              <p class="meta">B.Eng. candidate / Junior undergraduate student</p>
             </div>
           </article>
-
-          <article class="publication-card">
-            <p class="pub-year">2025</p>
+          <article class="education-item muted">
+            <div class="education-stage">Master</div>
             <div>
-              <h3>论文题目待补充</h3>
-              <p class="authors">HardenMYG, Co-author Name</p>
-              <p class="venue">Under Review / In Preparation</p>
-              <p>
-                这里可以记录正在投稿、在研或准备中的论文，方便主页保持更新，也方便之后补充最终发表信息。
-              </p>
-              <div class="pub-links">
-                <a href="#" aria-label="Paper link placeholder">Paper</a>
-                <a href="#" aria-label="Slides link placeholder">Slides</a>
-              </div>
+              <h3>To be updated</h3>
+              <p>研究生阶段教育经历待补充。</p>
+            </div>
+          </article>
+          <article class="education-item muted">
+            <div class="education-stage">Ph.D.</div>
+            <div>
+              <h3>To be updated</h3>
+              <p>博士阶段教育经历待补充。</p>
             </div>
           </article>
         </div>
       </section>
 
-      <section class="section stack-section" id="experience" aria-labelledby="experience-title">
-        <div>
-          <p class="eyebrow">Background</p>
-          <h2 id="experience-title">教育与能力</h2>
-        </div>
-        <div class="timeline">
-          <article class="timeline-item">
-            <p class="time">2024 - Present</p>
-            <h3>研究生阶段</h3>
-            <p>学校、学院、专业、导师与课题组信息待补充。</p>
-          </article>
-          <article class="timeline-item">
-            <p class="time">Skills</p>
-            <h3>研究与工程能力</h3>
-            <p>论文阅读、实验设计、数据分析、模型实现、学术写作、Python / Git / LaTeX 等。</p>
-          </article>
-        </div>
+      <section class="section" id="research-interest">
+        <h2>Research Interest</h2>
+        <p>
+          我的研究兴趣将随着本科阶段的课程学习、科研训练和项目实践持续更新。目前可在这里列出你关注的方向，
+          例如人工智能、机器学习、计算机视觉、自然语言处理、数据挖掘、软件工程或计算机系统等。
+        </p>
+        <ul class="interest-list">
+          <li>待补充的研究兴趣一</li>
+          <li>待补充的研究兴趣二</li>
+          <li>待补充的研究兴趣三</li>
+        </ul>
       </section>
 
-      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
-        <div>
-          <p class="eyebrow">Contact</p>
-          <h2 id="contact-title">联系方式</h2>
-        </div>
-        <div class="contact-block">
-          <p>欢迎通过邮箱或 GitHub 与我交流研究、论文与项目合作。</p>
-          <div class="contact-actions">
-            <a class="button primary" href="mailto:hello@example.com">
-              <span aria-hidden="true">@</span>
-              Email
-            </a>
-            <a class="button secondary" href="https://github.com/HardenMYG" target="_blank" rel="noreferrer">
-              <span aria-hidden="true">GH</span>
-              GitHub
-            </a>
-          </div>
-        </div>
+      <section class="section" id="publications">
+        <h2>Publications</h2>
+        <p class="empty-note">
+          暂无已公开论文。后续可以在这里按年份列出研究生阶段或本科科研阶段的论文、预印本与投稿工作。
+        </p>
       </section>
+
+      <section class="section" id="projects">
+        <h2>Projects</h2>
+        <p class="empty-note">
+          项目经历待补充。可以放课程项目、科研代码、竞赛作品、开源工具或可公开展示的系统实现。
+        </p>
+      </section>
+
+      <footer class="footer">
+        <span>© <span id="year"></span> HardenMYG</span>
+        <a href="#top">Back to top</a>
+      </footer>
     </main>
-
-    <footer class="footer">
-      <span>© <span id="year"></span> HardenMYG</span>
-      <a href="#home">Back to top</a>
-    </footer>
 
     <script src="./script.js"></script>
   </body>
