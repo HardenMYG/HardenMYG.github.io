@@ -236,6 +236,19 @@ h2 {
   object-fit: cover;
 }
 
+.portrait-placeholder {
+  display: grid;
+  aspect-ratio: 1;
+  place-items: center;
+  border-radius: 0.5rem;
+  background:
+    linear-gradient(135deg, rgba(29, 107, 91, 0.18), rgba(49, 95, 143, 0.12)),
+    #eef2e9;
+  color: var(--green-dark);
+  font-size: clamp(5rem, 14vw, 9rem);
+  font-weight: 900;
+}
+
 .profile-name {
   margin: 0;
   font-size: 1.45rem;
@@ -290,12 +303,19 @@ h2 {
   border-top: 1px solid var(--line);
 }
 
+.prose p,
+.contact-block p,
 .intro-band p:last-child,
 .contact-section p {
   margin: 0;
   color: var(--muted);
   font-size: 1.05rem;
   line-height: 1.8;
+}
+
+.prose {
+  display: grid;
+  gap: 1rem;
 }
 
 .section-heading {
@@ -310,13 +330,13 @@ h2 {
   font-weight: 900;
 }
 
-.repo-grid {
+.research-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 1rem;
 }
 
-.repo-card {
+.info-card {
   display: flex;
   min-height: 15rem;
   flex-direction: column;
@@ -329,7 +349,9 @@ h2 {
   box-shadow: 0 16px 46px rgba(24, 32, 47, 0.08);
 }
 
-.repo-card h3 {
+.info-card h3,
+.publication-card h3,
+.timeline-item h3 {
   margin: 0;
   color: var(--ink);
   font-size: 1.2rem;
@@ -337,58 +359,84 @@ h2 {
   overflow-wrap: anywhere;
 }
 
-.repo-card p {
+.info-card p,
+.publication-card p,
+.timeline-item p {
   margin: 0.7rem 0 0;
   color: var(--muted);
   line-height: 1.65;
 }
 
-.repo-meta {
+.card-index {
+  color: var(--coral);
+  font-size: 0.86rem;
+  font-weight: 900;
+}
+
+.publication-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.publication-card {
+  display: grid;
+  grid-template-columns: 7rem minmax(0, 1fr);
+  gap: clamp(1rem, 3vw, 2rem);
+  padding: 1.15rem;
+  background: rgba(255, 255, 255, 0.76);
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  box-shadow: 0 16px 46px rgba(24, 32, 47, 0.08);
+}
+
+.publication-card .pub-year {
+  margin: 0;
+  color: var(--green-dark);
+  font-size: 1.4rem;
+  font-weight: 900;
+}
+
+.publication-card .authors,
+.publication-card .venue,
+.timeline-item .time {
+  margin-top: 0.35rem;
+  font-size: 0.92rem;
+  font-weight: 850;
+}
+
+.publication-card .venue,
+.timeline-item .time {
+  color: var(--coral);
+}
+
+.pub-links {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
-  color: var(--muted);
+  margin-top: 1rem;
   font-size: 0.84rem;
   font-weight: 800;
 }
 
-.repo-meta span {
+.pub-links a {
   padding: 0.35rem 0.5rem;
   background: #eef2e9;
+  color: var(--green-dark);
   border-radius: 0.35rem;
+  text-decoration: none;
 }
 
-.skeleton {
-  min-height: 15rem;
-  background:
-    linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.9), transparent),
-    #edf2ed;
-  background-size: 200% 100%, auto;
-  animation: shimmer 1.2s infinite linear;
-}
-
-@keyframes shimmer {
-  to {
-    background-position: -200% 0, 0 0;
-  }
-}
-
-.stack-list {
+.timeline {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 0.8rem;
-  padding: 0;
-  margin: 0;
-  list-style: none;
 }
 
-.stack-list li {
+.timeline-item {
   padding: 0.9rem 1rem;
   background: rgba(255, 255, 255, 0.72);
   border: 1px solid var(--line);
   border-left: 0.35rem solid var(--blue);
   border-radius: 0.45rem;
-  font-weight: 850;
 }
 
 .contact-section {
@@ -399,6 +447,11 @@ h2 {
 .contact-actions {
   justify-content: flex-end;
   margin-top: 0;
+}
+
+.contact-block {
+  display: grid;
+  gap: 1.2rem;
 }
 
 .footer {
@@ -428,7 +481,11 @@ h2 {
     max-width: 9ch;
   }
 
-  .repo-grid {
+  .research-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .publication-card {
     grid-template-columns: 1fr;
   }
 
@@ -448,8 +505,7 @@ h2 {
     justify-content: space-between;
   }
 
-  .stats,
-  .stack-list {
+  .stats {
     grid-template-columns: 1fr;
   }
 

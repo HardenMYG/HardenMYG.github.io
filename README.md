@@ -1,10 +1,18 @@
 # HardenMYG.github.io
 
-GitHub Pages personal site for `HardenMYG`.
+Personal academic homepage for `HardenMYG`.
 
 ## Preview
 
 Open `index.html` in a browser.
+
+## Content
+
+- Basic personal introduction
+- Research interests
+- Graduate-stage publications
+- Education and research skills
+- Contact links
 
 ## Publish
 
@@ -15,5 +23,5 @@ Open `index.html` in a browser.
 ## Customize
 
 - Replace `hello@example.com` in `index.html` with your email.
-- Edit the About and Stack sections in `index.html`.
+- Replace placeholder education, research, and publication content with your real information.
 - Change colors and layout in `styles.css`.
